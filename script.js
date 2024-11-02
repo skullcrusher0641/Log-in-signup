@@ -8,6 +8,25 @@ name: userName, email: userEmail, password: userPassword
 }
 let users =  JSON.parse(localStorage.getItem("users"));
 
+if(!userName || !userEmail || !userPassword){
+alert("enter field first")
+return
+}
+
+
+for(i=0;i<users.length;i++){
+if(userEmail==users[i].email){
+    alert("email already exist")
+    return
+}
+
+
+}
+
+
+
+
+
 if(users){
 users.push(userData)
 localStorage.setItem("users", JSON.stringify(users))
