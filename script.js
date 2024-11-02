@@ -13,7 +13,7 @@ alert("enter field first")
 return
 }
 
-
+if(users){
 for(i=0;i<users.length;i++){
 if(userEmail==users[i].email){
     alert("email already exist")
@@ -23,7 +23,7 @@ if(userEmail==users[i].email){
 
 }
 
-
+}
 
 
 
